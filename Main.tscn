@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuf5sw57q446j"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_5y3yj"]
+[ext_resource type="Script" path="res://SkillsContainer.gd" id="2_20frn"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 558.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_5y3yj")
+
+[node name="JobDropdown" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 161.0
+offset_right = 1045.0
+offset_bottom = 65.0
+
+[node name="JobNameLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 97.0
+offset_right = 340.0
+offset_bottom = 181.0
+
+[node name="JobDescriptionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 97.0
+offset_right = 889.0
+offset_bottom = 240.0
+
+[node name="SkillsContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 267.0
+offset_right = 911.0
+offset_bottom = 483.0
+script = ExtResource("2_20frn")
